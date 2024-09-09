@@ -1,4 +1,4 @@
-import { UserRepository } from '../../../application/ports/user.repository';
+import { UserRepository } from '../../../domain/ports/user.repository';
 import { User } from '../../../domain/entities/user.entity';
 
 export class InMemoryUserRepository implements UserRepository {

@@ -1,4 +1,4 @@
-import { CompanyRepository } from '../../../application/ports/company.repository';
+import { CompanyRepository } from '../../../domain/ports/company.repository';
 import { Company } from '../../../domain/entities/company.entity';
 
 export class InMemoryCompanyRepository implements CompanyRepository {
