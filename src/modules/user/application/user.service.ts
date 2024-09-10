@@ -1,6 +1,6 @@
-import { User } from '../../domain/entities/user.entity';
-import { UserRepository } from '../ports/user.repository';
-import { CompanyService } from './company.service';
+import { CompanyService } from '../../company/application/company.service';
+import { User } from '../domain/user.entity';
+import { UserRepository } from '../domain/user.repository';
 
 export class UserService {
   constructor(

@@ -1,5 +1,5 @@
-import { CompanyRepository } from '../../../domain/ports/company.repository';
-import { Company } from '../../../domain/entities/company.entity';
+import { CompanyRepository } from '../domain/company.repository';
+import { Company } from '../domain/company.entity';
 
 export class InMemoryCompanyRepository implements CompanyRepository {
   private companies: Company[] = [

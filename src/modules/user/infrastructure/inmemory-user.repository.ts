@@ -1,5 +1,5 @@
-import { UserRepository } from '../../../domain/ports/user.repository';
-import { User } from '../../../domain/entities/user.entity';
+import { UserRepository } from '../domain/user.repository';
+import { User } from '../domain/user.entity';
 
 export class InMemoryUserRepository implements UserRepository {
   private users: User[] = [

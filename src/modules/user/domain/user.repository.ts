@@ -1,4 +1,4 @@
-import { User } from '../../domain/entities/user.entity';
+import { User } from './user.entity';
 
 export interface UserRepository {
   getUserById(id: string): Promise<User | null>;

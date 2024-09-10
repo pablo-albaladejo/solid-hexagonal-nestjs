@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { UserService } from '../../../application/services/user.service';
-import { CompanyService } from '../../../application/services/company.service';
+import { UserService } from '../application/user.service';
+import { CompanyService } from '../../company/application/company.service';
 
 export function createUserRouter(
   userService: UserService,

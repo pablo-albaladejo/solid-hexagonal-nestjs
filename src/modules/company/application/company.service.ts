@@ -1,5 +1,5 @@
-import { Company } from '../../domain/entities/company.entity';
-import { CompanyRepository } from '../ports/company.repository';
+import { Company } from '../domain/company.entity';
+import { CompanyRepository } from '../domain/company.repository';
 
 export class CompanyService {
   constructor(private companyRepository: CompanyRepository) {}
