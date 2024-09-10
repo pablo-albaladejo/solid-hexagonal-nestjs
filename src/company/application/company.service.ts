@@ -4,11 +4,11 @@ import { CompanyRepository } from '../domain/company.repository';
 export class CompanyService {
   constructor(private companyRepository: CompanyRepository) {}
 
-  async getCompayByUserId(userId: string): Promise<Company> {
-    const company = await this.companyRepository.getCompanyByUserId(userId);
+  async getCompayById(companyId: string): Promise<Company> {
+    const company = await this.companyRepository.getCompanyById(companyId);
 
     if (!company) {
-      throw new Error(`Company with userId ${userId} not found`);
+      throw new Error(`Company with id ${companyId} not found`);
     }
 
     return company;

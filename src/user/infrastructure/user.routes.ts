@@ -5,6 +5,7 @@ export function createUserRouter(userController: UserController ): Router {
   const router = Router();
 
   router.get('/:id', userController.getUserById );
+  router.post('/', userController.createUser );
 
   return router;
 }

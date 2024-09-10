@@ -5,6 +5,7 @@ import { UserModule } from './user/infrastructure/user.module';
 
 export const createServer = (): Express => {
   const server = express();
+  server.use(express.json());
 
   const routes = registerRoutes();
   routes.forEach(route => server.use(route));
