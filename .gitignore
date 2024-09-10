@@ -21,7 +21,3 @@ logs/
 
 # Testing
 coverage/
-
-# Dependency lock files
-package-lock.json
-yarn.lock
